@@ -5,9 +5,7 @@
   "web_accessible_resources": ["kittens/*.jpg"],
   "content_scripts": [
     {
-      //You need to specify which URLs the content script should run on. For all URLs
       "matches": [ "<all_urls>" ],
-      //The first thing you might try with an extension is making a content script. A content script is a piece of JavaScript code (which can also include and reference CSS) that runs after the page loads. It has full access to the DOM so you can do things like alter content, styles, layout, images, anything that is on the page. The manifest.json file should reference your content script.
       "js": [ "content.js" ]
     }
   ],
